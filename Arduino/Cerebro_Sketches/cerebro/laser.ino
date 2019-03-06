@@ -87,10 +87,10 @@ void triggerBoth(){
     }
     //else if onClock hasn't expired, turn on/keep on the laser
     else if ((millis()-onClock)<waveform.onTime){
-      right.sendDAC(right.DAClevel);
-      right.feedback(right.setPoint); //increase or decrease DAClevel to reach desired lightPower
-      left.sendDAC(left.DAClevel);
-      left.feedback(left.setPoint);
+      right.sendDAC(right.setPoint*3);
+      //right.feedback(right.setPoint); //increase or decrease DAClevel to reach desired lightPower
+      left.sendDAC(left.setPoint*3);
+      //left.feedback(left.setPoint); //removed feedback AGB 2/2019
       offClock = millis();
     }
     //else if offClock hasn't expired, turn off/keep off light
