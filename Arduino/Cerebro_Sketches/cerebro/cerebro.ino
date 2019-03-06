@@ -32,6 +32,7 @@ const uint8_t VERSION = 96; // 2018-11-30
 
 Documentation for this project can be found at https://karpova-lab.github.io/cerebro/
 */
+#include <Adafruit_SleepyDog.h>
 #include <EEPROM.h>
 #include <LaserDiode.h>
 #include <SparkFunBQ27441.h>      //https://github.com/sparkfun/SparkFun_BQ27441_Arduino_Library
