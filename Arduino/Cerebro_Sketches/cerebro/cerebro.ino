@@ -37,7 +37,6 @@ Documentation for this project can be found at https://karpova-lab.github.io/cer
 #include <LaserDiode.h>
 #include <SparkFunBQ27441.h>      //https://github.com/sparkfun/SparkFun_BQ27441_Arduino_Library
 #include <Radio.h>                //https://github.com/LowPowerLab/RFM69
-#include <LowPower.h>             //https://github.com/LowPowerLab/LowPower
 #include <avr/wdt.h>
 
 #define SERIAL_NUMBER_ADDRESS 0
